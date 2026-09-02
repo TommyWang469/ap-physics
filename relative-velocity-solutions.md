@@ -10,7 +10,14 @@ The basic relationship is
 
 ## Problem 3.71 — Airplane and wind
 
-An airplane points due west with an airspeed of \(220\ \text{km/h}\). After \(0.500\ \text{h}\), it is \(120\ \text{km}\) west and \(20\ \text{km}\) south of its starting point.
+### Question
+
+An airplane pilot sets a compass course due west and maintains an airspeed of \(220\ \text{km/h}\). After flying for \(0.500\ \text{h}\), she finds herself over a town \(120\ \text{km}\) west and \(20\ \text{km}\) south of her starting point.
+
+1. Find the wind velocity (magnitude and direction).
+2. If the wind velocity is \(40\ \text{km/h}\) due south, in what direction should the pilot set her course to travel due west? Use the same airspeed of \(220\ \text{km/h}\).
+
+### Solution
 
 ### (a) Wind velocity
 
@@ -72,7 +79,14 @@ Therefore,
 
 ## Problem 3.72 — Raindrops and a moving train
 
-A train moves east at \(12.0\ \text{m/s}\). Rain falls vertically relative to Earth and leaves traces on the train windows inclined \(30.0^\circ\) from vertical.
+### Question
+
+When a train's velocity is \(12.0\ \text{m/s}\) eastward, raindrops that are falling vertically with respect to Earth make traces that are inclined \(30.0^\circ\) to the vertical on the windows of the train.
+
+1. What is the horizontal component of a drop's velocity with respect to Earth? With respect to the train?
+2. What is the magnitude of the velocity of the raindrop with respect to Earth? With respect to the train?
+
+### Solution
 
 The relative-velocity equation is
 
@@ -127,7 +141,11 @@ Relative to the train:
 
 ## Problem 3.73 — Soccer ball relative to Juan
 
-Juan runs north at \(8.00\ \text{m/s}\). The ball moves at \(12.0\ \text{m/s}\), \(37.0^\circ\) east of north, relative to the ground.
+### Question
+
+In a World Cup soccer match, Juan is running due north toward the goal with a speed of \(8.00\ \text{m/s}\) relative to the ground. A teammate passes the ball to him. The ball has a speed of \(12.0\ \text{m/s}\) and is moving in a direction \(37.0^\circ\) east of north, relative to the ground. What are the magnitude and direction of the ball's velocity relative to Juan?
+
+### Solution
 
 The ball's ground-velocity components are
 
@@ -169,7 +187,11 @@ The direction measured north of east is
 
 ## Problem 3.75 — Soccer ball relative to the ground
 
-Mia runs north at \(6.00\ \text{m/s}\). Relative to Mia, the ball moves at \(5.00\ \text{m/s}\), \(30.0^\circ\) east of south.
+### Question
+
+Two soccer players, Mia and Alice, are running as Alice passes the ball to Mia. Mia is running due north with a speed of \(6.00\ \text{m/s}\). The velocity of the ball relative to Mia is \(5.00\ \text{m/s}\) in a direction \(30.0^\circ\) east of south. What are the magnitude and direction of the velocity of the ball relative to the ground?
+
+### Solution
 
 Use
 
