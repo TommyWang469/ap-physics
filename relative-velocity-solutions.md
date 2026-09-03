@@ -8,6 +8,76 @@ The basic relationship is
 \vec v_{A/C}=\vec v_{A/B}+\vec v_{B/C}.
 \]
 
+## Core shortcut: object minus observer
+
+When a problem asks for an object's velocity relative to an observer, subtract the observer's velocity from the object's velocity:
+
+\[
+\boxed{\vec v_{\text{object/observer}}
+=\vec v_{\text{object/reference}}
+-\vec v_{\text{observer/reference}}}
+\]
+
+Both velocities on the right must be measured relative to the same reference frame, usually the ground or Earth.
+
+For example,
+
+\[
+\vec v_{\text{ball/Juan}}
+=\vec v_{\text{ball/ground}}
+-\vec v_{\text{Juan/ground}}.
+\]
+
+The order matters: **object minus observer**.
+
+### Why subtraction works
+
+The object's position relative to the observer is the separation between their positions:
+
+\[
+\vec r_{\text{object/observer}}
+=\vec r_{\text{object}}-\vec r_{\text{observer}}.
+\]
+
+Taking the rate of change of both sides gives
+
+\[
+\vec v_{\text{object/observer}}
+=\vec v_{\text{object}}-\vec v_{\text{observer}}.
+\]
+
+Intuitively, the observer considers themself stationary, so the observer's velocity is subtracted from every object in the scene. For example, if a car travels east at \(10\ \text{m/s}\) and the observer travels east at \(6\ \text{m/s}\), the observer sees the car moving east at
+
+\[
+10-6=4\ \text{m/s}.
+\]
+
+If both travel with the same velocity, the result is zero, which agrees with the fact that the object appears stationary to the observer.
+
+### The same rule for position and acceleration
+
+For ordinary, nonrotating reference frames, use **object minus observer** for all three quantities:
+
+\[
+\boxed{\vec r_{\text{object/observer}}
+=\vec r_{\text{object/reference}}
+-\vec r_{\text{observer/reference}}}
+\]
+
+\[
+\boxed{\vec v_{\text{object/observer}}
+=\vec v_{\text{object/reference}}
+-\vec v_{\text{observer/reference}}}
+\]
+
+\[
+\boxed{\vec a_{\text{object/observer}}
+=\vec a_{\text{object/reference}}
+-\vec a_{\text{observer/reference}}}
+\]
+
+The vectors being subtracted must be measured in the same reference frame and expressed using the same coordinate directions. In more advanced problems involving a rotating observer, such as someone on a spinning platform, extra rotation terms may be needed. The direct subtraction rule is the one to use for the nonrotating frames in these exercises.
+
 ## Problem 3.71 — Airplane and wind
 
 ### Question
