@@ -78,6 +78,61 @@ For ordinary, nonrotating reference frames, use **object minus observer** for al
 
 The vectors being subtracted must be measured in the same reference frame and expressed using the same coordinate directions. In more advanced problems involving a rotating observer, such as someone on a spinning platform, extra rotation terms may be needed. The direct subtraction rule is the one to use for the nonrotating frames in these exercises.
 
+## Problem 3.37 — Canoe relative to a river
+
+### Question
+
+A canoe has a velocity of \(0.40\ \text{m/s}\) southeast relative to Earth. The canoe is on a river that is flowing \(0.50\ \text{m/s}\) east relative to Earth. Find the velocity (magnitude and direction) of the canoe relative to the river.
+
+### Solution
+
+Use object minus observer:
+
+\[
+\vec v_{C/R}=\vec v_{C/E}-\vec v_{R/E}.
+\]
+
+Let east be \(+x\) and north be \(+y\). Southeast is \(45^\circ\) south of east, so the canoe's Earth-velocity components are
+
+\[
+\vec v_{C/E}
+=\left(0.40\cos45^\circ,-0.40\sin45^\circ\right)
+=(0.283,-0.283)\ \text{m/s}.
+\]
+
+The river's Earth-velocity is
+
+\[
+\vec v_{R/E}=(0.50,0)\ \text{m/s}.
+\]
+
+Therefore,
+
+\[
+\vec v_{C/R}
+=(0.283,-0.283)-(0.50,0)
+=(-0.217,-0.283)\ \text{m/s}.
+\]
+
+The magnitude is
+
+\[
+|\vec v_{C/R}|
+=\sqrt{(-0.217)^2+(-0.283)^2}
+=0.357\ \text{m/s}
+\approx 0.36\ \text{m/s}.
+\]
+
+Both components are negative, so the direction is southwest. Measured south of west,
+
+\[
+\theta
+=\tan^{-1}\left(\frac{0.283}{0.217}\right)
+=52.5^\circ.
+\]
+
+**Answer:** \(\boxed{0.36\ \text{m/s},\ 52^\circ\text{ south of west}}\), equivalently \(38^\circ\) west of south.
+
 ## Problem 3.71 — Airplane and wind
 
 ### Question

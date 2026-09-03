@@ -187,6 +187,253 @@ H=\frac{v_0^2\sin^2\theta}{2g}.
 
 These three special-case formulas do not work unchanged when the launch and landing heights differ.
 
+### What about three-dimensional motion?
+
+Three-dimensional motion follows the same component method, with a \(z\)-component added:
+
+\[
+\vec r(t)=x(t)\hat i+y(t)\hat j+z(t)\hat k.
+\]
+
+Differentiate each component independently:
+
+\[
+\vec v(t)
+=\frac{d\vec r}{dt}
+=\frac{dx}{dt}\hat i
++\frac{dy}{dt}\hat j
++\frac{dz}{dt}\hat k,
+\]
+
+\[
+\vec a(t)
+=\frac{d\vec v}{dt}
+=\frac{d^2x}{dt^2}\hat i
++\frac{d^2y}{dt^2}\hat j
++\frac{d^2z}{dt^2}\hat k.
+\]
+
+The speed is the magnitude of the velocity vector:
+
+\[
+|\vec v|=\sqrt{v_x^2+v_y^2+v_z^2}.
+\]
+
+Relative motion still uses object minus observer in all three components:
+
+\[
+\vec v_{A/B}
+=(v_{Ax}-v_{Bx})\hat i
++(v_{Ay}-v_{By})\hat j
++(v_{Az}-v_{Bz})\hat k.
+\]
+
+The current AP Physics C: Mechanics framework only requires quantitative motion analysis in two dimensions. A teacher may still introduce 3D notation, but the mathematics is not a new idea: solve the \(x\), \(y\), and \(z\) directions independently using the same time.
+
+### Inverse projectile problems: final velocity to initial velocity
+
+#### Question type
+
+A ball is thrown from a cliff. Its final velocity magnitude and direction at impact are given, and the problem asks for its initial velocity.
+
+#### Method
+
+Let upward be \(+y\), and let the cliff height be \(h\). If the ball's final speed is \(v_f\) at an angle \(\theta_f\) below horizontal, first resolve the final velocity:
+
+\[
+v_{fx}=v_f\cos\theta_f,
+\qquad
+v_{fy}=-v_f\sin\theta_f.
+\]
+
+There is no horizontal acceleration, so
+
+\[
+\boxed{v_{0x}=v_{fx}}.
+\]
+
+For the vertical direction, use
+
+\[
+v_{fy}^2=v_{0y}^2+2a_y\Delta y.
+\]
+
+Since \(a_y=-g\) and \(\Delta y=-h\),
+
+\[
+v_{fy}^2=v_{0y}^2+2gh,
+\]
+
+so
+
+\[
+\boxed{v_{0y}=\pm\sqrt{v_{fy}^2-2gh}}.
+\]
+
+Choose the sign from the wording: positive if the ball was initially thrown upward, negative if it was initially thrown downward, and zero if it was launched horizontally.
+
+Finally,
+
+\[
+\boxed{v_0=\sqrt{v_{0x}^2+v_{0y}^2}},
+\]
+
+\[
+\boxed{\theta_0=\tan^{-1}\left(\frac{|v_{0y}|}{|v_{0x}|}\right)}.
+\]
+
+State whether the initial direction is above or below horizontal based on the sign of \(v_{0y}\).
+
+If flight time is given instead of enough displacement information, use
+
+\[
+\boxed{v_{0y}=v_{fy}+gt}.
+\]
+
+#### Example
+
+A ball thrown upward from a \(15\ \text{m}\) cliff hits the ground at \(25\ \text{m/s}\), \(53^\circ\) below horizontal. Use \(g=10\ \text{m/s}^2\). Find its initial velocity.
+
+Resolve the final velocity:
+
+\[
+v_{fx}=25\cos53^\circ\approx15\ \text{m/s},
+\]
+
+\[
+v_{fy}=-25\sin53^\circ\approx-20\ \text{m/s}.
+\]
+
+The horizontal velocity is constant:
+
+\[
+v_{0x}=15\ \text{m/s}.
+\]
+
+For the vertical component,
+
+\[
+(-20)^2=v_{0y}^2+2(-10)(-15),
+\]
+
+\[
+400=v_{0y}^2+300,
+\]
+
+\[
+v_{0y}=+10\ \text{m/s},
+\]
+
+where the positive root is chosen because the ball was thrown upward.
+
+Therefore,
+
+\[
+v_0=\sqrt{15^2+10^2}=18.0\ \text{m/s},
+\]
+
+\[
+\theta_0=\tan^{-1}\left(\frac{10}{15}\right)=33.7^\circ.
+\]
+
+**Answer:** \(\boxed{18.0\ \text{m/s},\ 33.7^\circ\text{ above horizontal}}\).
+
+If the problem gives only the final velocity and cliff height but does not say whether the ball was initially moving upward or downward, the sign of \(v_{0y}\), and therefore whether the initial angle is above or below horizontal, may be ambiguous.
+
+#### What if the vertical displacement is unknown?
+
+Without \(\Delta y\), do not use
+
+\[
+v_{fy}^2=v_{0y}^2+2a_y\Delta y.
+\]
+
+Look for another way to find the flight time.
+
+If time is given, use
+
+\[
+v_{fy}=v_{0y}-gt
+\quad\Rightarrow\quad
+\boxed{v_{0y}=v_{fy}+gt}.
+\]
+
+If horizontal displacement is given, horizontal velocity is constant, so
+
+\[
+\boxed{t=\frac{\Delta x}{v_{fx}}},
+\]
+
+and then
+
+\[
+\boxed{v_{0y}=v_{fy}+gt}.
+\]
+
+If the problem says the ball was launched horizontally, then
+
+\[
+\boxed{v_{0y}=0}
+\qquad\text{and}\qquad
+\boxed{v_0=|v_{0x}|=|v_{fx}|}.
+\]
+
+If only the final velocity magnitude and direction are known, with no \(\Delta y\), flight time, horizontal displacement, or other initial condition, there is not enough information to determine one unique initial velocity. The known final velocity fixes \(v_{0x}=v_{fx}\), but many values of \(v_{0y}\) are possible for different flight times.
+
+#### What if the maximum height is known?
+
+At the highest point,
+
+\[
+v_y=0.
+\]
+
+If \(H\) is the vertical height gained from the launch point to the maximum point, use
+
+\[
+v_y^2=v_{0y}^2+2a_y\Delta y,
+\]
+
+\[
+0=v_{0y}^2-2gH,
+\]
+
+so, for a ball initially thrown upward,
+
+\[
+\boxed{v_{0y}=\sqrt{2gH}}.
+\]
+
+If the final velocity is also known, its horizontal component gives
+
+\[
+\boxed{v_{0x}=v_{fx}=v_f\cos\theta_f}.
+\]
+
+Then recombine the components:
+
+\[
+\boxed{v_0=\sqrt{v_{0x}^2+v_{0y}^2}},
+\]
+
+\[
+\boxed{\theta_0=\tan^{-1}\left(\frac{v_{0y}}{|v_{0x}|}\right)}.
+\]
+
+Be careful about how the maximum height is defined. If the problem gives the maximum height \(y_{\max}\) above the ground and the launch point is at height \(y_0\), then the height gained is
+
+\[
+\boxed{H=y_{\max}-y_0}.
+\]
+
+Knowing an absolute maximum height above the ground without knowing the cliff's launch height does not determine \(v_{0y}\). You need the height gained above the launch point.
+
+For example, if a ball starts from a \(15\ \text{m}\) cliff and reaches a maximum height of \(20\ \text{m}\) above the ground, then \(H=5\ \text{m}\). With \(g=10\ \text{m/s}^2\),
+
+\[
+v_{0y}=\sqrt{2(10)(5)}=10\ \text{m/s upward}.
+\]
+
 ## Concepts you should be able to explain
 
 ### Position, displacement, and distance
@@ -340,6 +587,384 @@ This lets you relate velocity and position without time:
 \int_{v_0}^{v}v\,dv
 =\int_{x_0}^{x}a(x)\,dx.
 \]
+
+### TI-84 derivative and integral shortcuts
+
+The TI-84 can calculate a **numerical derivative at one point** and a **numerical definite integral over an interval**. It does not normally return a symbolic derivative function or an indefinite integral with \(+C\).
+
+#### Numerical derivative
+
+Press `MATH`, select `8:nDeriv(`, and enter
+
+```text
+nDeriv(expression, variable, value)
+```
+
+Example:
+
+```text
+nDeriv(X^2, X, 3)
+```
+
+returns \(6\), the value of the derivative of \(x^2\) at \(x=3\).
+
+For kinematics, if \(x(t)=t^2\), this can check that the instantaneous velocity at \(t=3\) is \(6\). If the question asks for the entire function \(v(t)\), you must still differentiate symbolically and write \(v(t)=2t\).
+
+#### Definite integral
+
+Press `MATH`, select `9:fnInt(`, and enter
+
+```text
+fnInt(expression, variable, lower bound, upper bound)
+```
+
+Example:
+
+```text
+fnInt(X^2, X, 0, 3)
+```
+
+returns \(9\).
+
+In kinematics,
+
+\[
+\Delta x=\int_{t_i}^{t_f}v(t)\,dt
+\]
+
+and
+
+\[
+\Delta v=\int_{t_i}^{t_f}a(t)\,dt.
+\]
+
+Remember to add the initial value when appropriate:
+
+\[
+v_f=v_i+\int_{t_i}^{t_f}a(t)\,dt.
+\]
+
+For total distance, split the integral wherever velocity changes sign or integrate \(|v(t)|\). A direct integral of \(v(t)\) gives displacement, not distance.
+
+The TI-84 is most useful for checking arithmetic. On a calculus-based physics test, show the derivative or integral setup and do the symbolic step yourself when the question asks for a derivation or function.
+
+#### Symbolic derivatives and indefinite integrals
+
+A standard TI-84 does not have a computer algebra system, so it will not transform
+
+\[
+f(x)=x^3
+\]
+
+into the symbolic derivative
+
+\[
+f'(x)=3x^2
+\]
+
+or the indefinite integral
+
+\[
+\int x^3\,dx=\frac{x^4}{4}+C.
+\]
+
+Those algebraic steps must be done by hand.
+
+The calculator can graph a numerical approximation to a derivative function. For example, after entering a function in `Y1`, enter the following in `Y2`:
+
+```text
+nDeriv(Y1, X, X)
+```
+
+It can also graph one particular accumulation function, such as
+
+```text
+fnInt(T^2, T, 0, X)
+```
+
+which numerically represents
+
+\[
+F(x)=\int_0^x t^2\,dt.
+\]
+
+This gives the particular function with \(F(0)=0\), not the complete family of antiderivatives \(x^3/3+C\). These numerical graphing methods can be slow and do not replace symbolic work.
+
+## Calculus problems most likely to appear
+
+### 1. Given position, find velocity and acceleration
+
+Differentiate once and twice:
+
+\[
+x(t)\longrightarrow v(t)=\frac{dx}{dt}
+\longrightarrow a(t)=\frac{d^2x}{dt^2}.
+\]
+
+A question may also ask you to evaluate \(v\) and \(a\) at a specific time, find when the object is at rest by solving \(v(t)=0\), or determine when it changes direction.
+
+Example:
+
+\[
+x(t)=2t^3-3t^2+4,
+\]
+
+\[
+v(t)=6t^2-6t,
+\qquad
+a(t)=12t-6.
+\]
+
+### 2. Decide when an object speeds up or slows down
+
+Find \(v(t)\) and \(a(t)\), locate every time when either expression is zero, and make a sign chart.
+
+- Same signs for \(v\) and \(a\): speeding up.
+- Opposite signs for \(v\) and \(a\): slowing down.
+
+### 3. Given velocity, find displacement and distance
+
+Displacement is the signed integral:
+
+\[
+\Delta x=\int_{t_i}^{t_f}v(t)\,dt.
+\]
+
+For distance, first solve \(v(t)=0\) to find direction changes, then add the absolute value of each interval's displacement:
+
+\[
+\text{distance}=\int_{t_i}^{t_f}|v(t)|\,dt.
+\]
+
+### 4. Given acceleration, recover velocity and position
+
+Integrate twice and use the initial conditions:
+
+\[
+v(t)=v_0+\int_0^t a(\tau)\,d\tau,
+\]
+
+\[
+x(t)=x_0+\int_0^t v(\tau)\,d\tau.
+\]
+
+Example:
+
+\[
+a(t)=4t,
+\qquad
+v(0)=3,
+\qquad
+x(0)=1,
+\]
+
+gives
+
+\[
+v(t)=2t^2+3,
+\]
+
+\[
+x(t)=\frac{2}{3}t^3+3t+1.
+\]
+
+### 5. Interpret calculus on motion graphs
+
+Expect questions such as:
+
+- Find instantaneous velocity from the tangent slope of an \(x\)-versus-\(t\) graph.
+- Find acceleration from the slope of a \(v\)-versus-\(t\) graph.
+- Find displacement from signed area under \(v(t)\).
+- Find change in velocity from signed area under \(a(t)\).
+- Match position, velocity, and acceleration graphs.
+
+### 6. Differentiate vector position functions
+
+Differentiate each component separately:
+
+\[
+\vec r(t)=x(t)\hat i+y(t)\hat j,
+\]
+
+\[
+\vec v(t)=x'(t)\hat i+y'(t)\hat j,
+\]
+
+\[
+\vec a(t)=x''(t)\hat i+y''(t)\hat j.
+\]
+
+Then find speed using
+
+\[
+|\vec v|=\sqrt{v_x^2+v_y^2}.
+\]
+
+Example:
+
+\[
+\vec r(t)=t^2\hat i+2t^3\hat j.
+\]
+
+At \(t=1\),
+
+\[
+\vec v=2\hat i+6\hat j,
+\qquad
+|\vec v|=2\sqrt{10},
+\qquad
+\vec a=2\hat i+12\hat j.
+\]
+
+### 7. Use the chain rule when acceleration depends on position
+
+If time is not present, use
+
+\[
+\boxed{a=v\frac{dv}{dx}}.
+\]
+
+Then separate and integrate:
+
+\[
+v\,dv=a(x)\,dx.
+\]
+
+This is a more challenging problem type, but it is worth recognizing.
+
+### 8. Derive a familiar kinematics result
+
+The constant-acceleration equations come directly from the definitions of acceleration and velocity. The derivation below assumes that \(a\) is constant.
+
+#### Deriving velocity
+
+Begin with
+
+\[
+a=\frac{dv}{dt}
+\]
+
+and separate the differentials:
+
+\[
+dv=a\,dt.
+\]
+
+Integrate from the initial state \((t=0,v=v_0)\) to the later state \((t,v)\):
+
+\[
+\int_{v_0}^{v}dv=\int_0^t a\,dt.
+\]
+
+Because \(a\) is constant,
+
+\[
+v-v_0=at,
+\]
+
+so
+
+\[
+\boxed{v=v_0+at}.
+\]
+
+The initial velocity appears because the integral calculates the change \(v-v_0\), not the entire final velocity by itself.
+
+#### Deriving position
+
+Use the definition of velocity:
+
+\[
+v=\frac{dx}{dt}.
+\]
+
+Substitute \(v=v_0+at\):
+
+\[
+\frac{dx}{dt}=v_0+at.
+\]
+
+Separate and integrate from \((t=0,x=x_0)\) to \((t,x)\):
+
+\[
+\int_{x_0}^{x}dx
+=\int_0^t(v_0+a\tau)\,d\tau.
+\]
+
+The dummy variable \(\tau\) is used inside the integral so that \(t\) can remain the upper limit. Evaluating gives
+
+\[
+x-x_0=v_0t+\frac12at^2,
+\]
+
+so
+
+\[
+\boxed{x=x_0+v_0t+\frac12at^2}.
+\]
+
+#### Indefinite-integral version
+
+The same derivation can be written using constants of integration:
+
+\[
+v=\int a\,dt=at+C_1.
+\]
+
+Using \(v(0)=v_0\) gives \(C_1=v_0\). Then
+
+\[
+x=\int(v_0+at)\,dt
+=v_0t+\frac12at^2+C_2.
+\]
+
+Using \(x(0)=x_0\) gives \(C_2=x_0\).
+
+#### Deriving the equation without time
+
+Use the chain rule:
+
+\[
+a=\frac{dv}{dt}
+=\frac{dv}{dx}\frac{dx}{dt}
+=v\frac{dv}{dx}.
+\]
+
+Then
+
+\[
+v\,dv=a\,dx.
+\]
+
+Integrate between the initial and final states:
+
+\[
+\int_{v_0}^{v}v\,dv
+=\int_{x_0}^{x}a\,dx.
+\]
+
+For constant \(a\),
+
+\[
+\frac12(v^2-v_0^2)=a(x-x_0),
+\]
+
+so
+
+\[
+\boxed{v^2=v_0^2+2a(x-x_0)}.
+\]
+
+For full credit on a derivation, state that acceleration is constant, include integration limits or integration constants, apply the initial conditions, and show the algebra leading to the requested equation.
+
+### Highest-priority order for a last-minute review
+
+1. Differentiate \(x(t)\) to obtain \(v(t)\) and \(a(t)\).
+2. Integrate \(a(t)\) using initial conditions.
+3. Find displacement versus distance from \(v(t)\).
+4. Use slopes and signed areas on graphs.
+5. Differentiate vector functions component by component.
+6. Recognize \(a=v\,dv/dx\).
 
 ## A reliable solution process
 
