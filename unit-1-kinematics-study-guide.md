@@ -434,6 +434,73 @@ For example, if a ball starts from a \(15\ \text{m}\) cliff and reaches a maximu
 v_{0y}=\sqrt{2(10)(5)}=10\ \text{m/s upward}.
 \]
 
+#### Recorded problem: time for a rock thrown from a height
+
+##### Question
+
+A rock is thrown from a height \(h_0\) with an initial speed \(v_0\) at an angle \(\theta\) above the horizontal. Find the time the rock takes to reach the ground.
+
+##### Solution
+
+Choose upward as \(+y\), put the ground at \(y=0\), and let the rock begin at \(y_0=h_0\). The initial vertical component points upward, so
+
+\[
+v_{0y}=+v_0\sin\theta,
+\qquad
+a_y=-g.
+\]
+
+The vertical position equation is
+
+\[
+y(t)=h_0+(v_0\sin\theta)t-\frac12gt^2.
+\]
+
+Set \(y=0\) when the rock reaches the ground:
+
+\[
+0=h_0+(v_0\sin\theta)t-\frac12gt^2.
+\]
+
+Rewrite it in standard quadratic form:
+
+\[
+\frac12gt^2-(v_0\sin\theta)t-h_0=0.
+\]
+
+In the quadratic \(At^2+Bt+C=0\), the coefficients are
+
+\[
+A=\frac12g,
+\qquad
+B=-v_0\sin\theta,
+\qquad
+C=-h_0.
+\]
+
+The negative sign on \(B\) does not mean the initial speed \(v_0\) is negative. It appears because the entire position equation was rearranged into standard quadratic form.
+
+Apply the quadratic formula:
+
+\[
+t=\frac{-B\pm\sqrt{B^2-4AC}}{2A}
+=\frac{v_0\sin\theta\pm\sqrt{v_0^2\sin^2\theta+2gh_0}}{g}.
+\]
+
+Because
+
+\[
+\sqrt{v_0^2\sin^2\theta+2gh_0}>v_0\sin\theta,
+\]
+
+the minus root gives a negative time. The physical answer is the positive root:
+
+\[
+\boxed{t=\frac{v_0\sin\theta+\sqrt{v_0^2\sin^2\theta+2gh_0}}{g}}.
+\]
+
+If the displayed explanation writes \(y(t)=h_0-v_{0y}t-\tfrac12gt^2\) while also defining upward as positive, that line has a sign inconsistency. With upward positive and a launch angle above horizontal, the initial-velocity term must be \(+v_{0y}t\). The selected answer still matches the correct equation above.
+
 ## Concepts you should be able to explain
 
 ### Position, displacement, and distance

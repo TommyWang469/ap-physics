@@ -78,6 +78,63 @@ For ordinary, nonrotating reference frames, use **object minus observer** for al
 
 The vectors being subtracted must be measured in the same reference frame and expressed using the same coordinate directions. In more advanced problems involving a rotating observer, such as someone on a spinning platform, extra rotation terms may be needed. The direct subtraction rule is the one to use for the nonrotating frames in these exercises.
 
+## AP Classroom — Stone released from a moving cart
+
+### Question
+
+Student 1 stands on a cart holding a small stone while Student 2 stands on the ground. The cart moves at a constant speed \(v_1\) in the \(+x\)-direction. Student 1 releases the stone from rest relative to the cart. Just before the stone reaches the ground, Student 1 measures the stone's speed as \(2v_1\) and its acceleration as \(a_1\). At the same instant, Student 2 measures the stone's speed as \(v_2\) and its acceleration as \(a_2\). Find the relationships between \(v_2\) and \(v_1\), and between \(a_2\) and \(a_1\).
+
+### Solution
+
+Because the stone is released from rest relative to the cart and there is no horizontal acceleration, Student 1 sees the stone fall straight downward. Just before impact,
+
+\[
+\vec v_{S/C}=(0,-2v_1).
+\]
+
+The cart's velocity relative to the ground is
+
+\[
+\vec v_{C/G}=(v_1,0).
+\]
+
+Use the relative-velocity addition rule:
+
+\[
+\vec v_{S/G}=\vec v_{S/C}+\vec v_{C/G}.
+\]
+
+Therefore, Student 2 measures
+
+\[
+\vec v_{S/G}=(v_1,-2v_1).
+\]
+
+The two components are perpendicular, so the speed is found with the Pythagorean theorem:
+
+\[
+v_2=|\vec v_{S/G}|
+=\sqrt{v_1^2+(-2v_1)^2}
+=\boxed{\sqrt5\,v_1}.
+\]
+
+The speeds are not added as \(v_1+2v_1\) because the horizontal and vertical velocities point in perpendicular directions.
+
+The cart moves at constant velocity, so its acceleration is zero. Thus,
+
+\[
+\vec a_{S/G}=\vec a_{S/C}+\vec a_{C/G}
+=\vec a_{S/C}.
+\]
+
+Both students therefore measure the same downward gravitational acceleration:
+
+\[
+\boxed{a_2=a_1}.
+\]
+
+**Answer:** \(\boxed{v_2=\sqrt5\,v_1\text{ and }a_2=a_1}\), which is choice A.
+
 ## Problem 3.37 — Canoe relative to a river
 
 ### Question
