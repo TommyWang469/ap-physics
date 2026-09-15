@@ -1,13 +1,14 @@
 # AP Physics - Unit 2: Forces Question Bank
 
-Recorded September 14, 2026 for a future Unit 2 study guide.
+Started September 14, 2026; updated September 15, 2026 for a future Unit 2 study guide. Contains 11 questions: 10 worksheet questions and one user-supplied pulley problem.
 
 - Assignment: **Intro to Forces Practice Problems**, questions 1-10.
 - Source supplied by the user: `Halliday+106+1-10.pdf`. The filename suggests Halliday page 106; textbook edition and original textbook numbering have not been independently verified.
 - [Archived original worksheet](sources/unit-2/halliday-106-1-10.pdf)
 - [Questions with worked answers (PDF)](output/pdf/unit-2-forces-halliday-1-10-solutions.pdf)
-- Provenance: all 10 questions below are faithful transcriptions or close paraphrases of this worksheet, with diagram information recorded in words/tables. These are assigned homework questions, not predictions of a future test. Original diagrams remain in the archived worksheet and solution PDF.
+- Provenance: the 10 `U2-H106` questions below are faithful transcriptions or close paraphrases of this worksheet, with diagram information recorded in words/tables. These are assigned homework questions, not predictions of a future test. Original diagrams remain in the archived worksheet and solution PDF. The additional pulley problem has its own source and is not part of the Halliday worksheet PDF.
 - Stable IDs: `U2-H106-01` through `U2-H106-10`. Keep these IDs when reusing the questions and avoid recording duplicates.
+- Additional source: [September 15 pulley sketch](sources/unit-2/2026-09-15-three-weight-pulley.png), with masses and requested angle clarified by the user in this conversation. Stable ID: `U2-PULLEY-01`.
 
 ## U2-H106-01 - Angled force at constant velocity
 
@@ -267,6 +268,80 @@ Since cos(30 degrees) > sin(30 degrees), down increases N most and up decreases 
 
 **Study-guide takeaway:** Resolve forces perpendicular to the incline; the normal force is perpendicular to the surface, not necessarily vertical.
 
+## U2-PULLEY-01 - Angle between strings supporting a 200 g mass
+
+**Recorded:** September 15, 2026. **Source:** user-supplied handwritten screenshot and subsequent verbal clarification; [archived original sketch](sources/unit-2/2026-09-15-three-weight-pulley.png). **Topics:** static equilibrium; ideal pulleys; tension; force components; angles between vectors; graphing-calculator intersections.
+
+### Question
+
+A 200 g mass is supported at a central junction by two strings. The left string runs up-left over a pulley to a hanging 105 g mass. The right string runs up-right over another pulley to a hanging 145 g mass. Find theta, the angle between the two upward-running strings at the central junction supporting the 200 g mass.
+
+Use the standard ideal model: the system is at rest, the strings are massless, and the pulleys are frictionless. The handwritten work uses gravitational acceleration g = 10 m/s².
+
+### Answer and reasoning
+
+**Answer: theta = 74.9 degrees.** This is the angle between the strings, not either string's angle from the horizontal.
+
+The stationary hanging masses set the tensions:
+
+\[
+T_L=(0.105)(10)=1.05\,\mathrm N,\qquad
+T_R=(0.145)(10)=1.45\,\mathrm N,\qquad
+W=(0.200)(10)=2.00\,\mathrm N.
+\]
+
+Let x be the left string's angle above the leftward horizontal and y the right string's angle above the rightward horizontal. At the central junction:
+
+\[
+\text{Horizontal:}\quad 1.05\cos x=1.45\cos y,
+\]
+\[
+\text{Vertical:}\quad 1.05\sin x+1.45\sin y=2.00.
+\]
+
+Solving gives x = 45.5847 degrees and y = 59.5497 degrees. Since the straight angle above the horizontal consists of x, theta, and y:
+
+\[
+\theta=180^\circ-x-y
+=180^\circ-45.5847^\circ-59.5497^\circ
+=\boxed{74.8656^\circ\approx74.9^\circ}.
+\]
+
+### Graphing-calculator method
+
+1. Set the calculator to **DEGREE** mode.
+2. Solve each force-balance equation for y and enter these two functions. `acos` and `asin` mean inverse cosine and inverse sine, not reciprocals:
+
+   ```text
+   Y1 = acos(1.05*cos(X)/1.45)
+   Y2 = asin((2 - 1.05*sin(X))/1.45)
+   ```
+
+3. Set the graph window to X from 0 to 90 and Y from 0 to 90. Graph both functions. Y2 is only real where its inverse-sine input is between -1 and 1; a missing segment outside that domain is normal.
+4. Use **Intersect** on the visible curves. The intersection is approximately **(45.5847, 59.5497)**, giving the two string angles from the horizontal.
+5. Compute **180 - X - Y** using the intersection coordinates to get **theta = 74.9 degrees**.
+
+The acute inverse-trig branches match this sketch, where both strings rise from the central junction toward the pulleys.
+
+### Direct check using the angle between force vectors
+
+The two tension vectors sum to an upward force of magnitude W, so:
+
+\[
+W^2=T_L^2+T_R^2+2T_LT_R\cos\theta.
+\]
+
+All three forces contain the same factor g, which cancels. Using masses in the same units:
+
+\[
+\theta=\cos^{-1}\left(\frac{200^2-105^2-145^2}{2(105)(145)}\right)
+=74.8656^\circ.
+\]
+
+**Angle caution:** The x + y angle is 105.1344 degrees; subtract it from 180 degrees to obtain theta. Equivalently, the interior angle opposite W in a head-to-tail force triangle is 105.1344 degrees and needs the same supplement. The direct vector-sum formula above already gives theta = 74.8656 degrees, so do not subtract that result from 180 degrees again.
+
+**Study-guide takeaways:** Use cosine horizontally and sine vertically when angles are measured from the horizontal. Tension and weight are forces measured in newtons, not kilograms. Clearly distinguish the angle between the strings from the two component angles and the supplementary force-triangle angle.
+
 ## Future Unit 2 study-guide index
 
 | Concept | Question IDs |
@@ -274,7 +349,9 @@ Since cos(30 degrees) > sin(30 degrees), down increases N most and up decreases 
 | Zero net force and constant velocity | U2-H106-01, U2-H106-03 |
 | Force, acceleration, and derivatives | U2-H106-02, U2-H106-06 |
 | Force components, vector sums, and quadrants | U2-H106-04, U2-H106-05, U2-H106-08 |
-| Connected systems and tension | U2-H106-07 |
+| Connected systems and tension | U2-H106-07, U2-PULLEY-01 |
+| Pulley equilibrium and the angle between strings | U2-PULLEY-01 |
+| Graphing-calculator intersections for force equations | U2-PULLEY-01 |
 | Normal force and loss of contact | U2-H106-09, U2-H106-10 |
 
 When building the study guide, use this source-backed bank, retain the original question numbers and diagrams, and distinguish any newly created variations from the homework.

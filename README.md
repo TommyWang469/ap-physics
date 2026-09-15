@@ -5,7 +5,7 @@ AP Physics study guides and recorded worked solutions:
 ## Unit 2 - Forces
 
 - [Intro to Forces Homework: Questions 1-10 with Worked Answers (PDF)](output/pdf/unit-2-forces-halliday-1-10-solutions.pdf)
-- [Unit 2 Forces Question Bank](unit-2-forces-question-log.md) - all 10 assigned questions, diagram descriptions, answers, and topic tags for a future study guide.
+- [Unit 2 Forces Question Bank](unit-2-forces-question-log.md) - 10 assigned worksheet questions plus the three-weight pulley problem, with solutions, diagram sources, topic tags, and a graphing-calculator method for future review.
 - [Original Forces Worksheet](sources/unit-2/halliday-106-1-10.pdf)
 
 ## Unit 1 - Kinematics
