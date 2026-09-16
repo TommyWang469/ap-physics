@@ -4,6 +4,7 @@ AP Physics study guides and recorded worked solutions:
 
 ## Unit 2 - Forces
 
+- [Equilibrium Homework 5.1-5.9, Skipping 5.4 (PDF)](output/pdf/unit-2-equilibrium-5-1-to-5-9-skip-5-4.pdf) - all eight assigned questions, diagrams, and worked solutions using g = 9.80 m/s²; [editable question and solution record](unit-2-equilibrium-5-1-to-5-9-solutions.md).
 - [Intro to Forces Homework: Questions 1-10 with Worked Answers (PDF)](output/pdf/unit-2-forces-halliday-1-10-solutions.pdf)
 - [Unit 2 Forces Question Bank](unit-2-forces-question-log.md) - 10 assigned worksheet questions plus the three-weight pulley problem, with solutions, diagram sources, topic tags, and a graphing-calculator method for future review.
 - [Original Forces Worksheet](sources/unit-2/halliday-106-1-10.pdf)
