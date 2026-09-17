@@ -24,11 +24,20 @@ Question. In Fig. E5.2 each suspended block has weight w. The pulleys are fricti
 
 Figure: Figure E5.2; see the archived source screenshot.
 
-Free-body diagrams for 5.2: in each of (a), (b), and (c), isolate one hanging block, with T upward and w downward.
+Free-body diagrams for 5.2: in each of (a), (b), and (c), isolate one hanging block, with F_T upward and w downward. Here F_T = T is the rope tension.
 
 For each isolated block: ΣF_y = T - w = 0. Each fixed pulley redirects the rope; none of these blocks is supported by two rope segments.
 
 (a) T = w.    (b) T = w.    (c) T = w.
+
+### 5.2(a) - Force applied to the wall
+
+The updated PDF explicitly labels F_T on each hanging-block diagram and includes separate force diagrams for the pulley and the wall attachments.
+
+- **Rope's fixed end:** The horizontal rope pulls the wall to the right with F_T = w. The wall pulls the rope left with an equal force.
+- **Pulley:** The rope pulls left with F_T and down with F_T. Ignoring pulley/support weight, the support force on the pulley has components (+F_T, +F_T), taking right/up as positive. Its magnitude is sqrt(2) F_T, directed up-right at 45 degrees.
+- **Pulley mount's force on the wall:** By Newton's third law, its components are (-F_T, -F_T) = (-w, -w). Its magnitude is sqrt(2) w, directed down-left at 45 degrees.
+- **Net load on the whole wall from both attachments:** (w, 0) + (-w, -w) = (0, -w), so the net force is w downward. This is different from the force at either individual attachment.
 
 ## 5.3 | Tension varies along a heavy chain
 
