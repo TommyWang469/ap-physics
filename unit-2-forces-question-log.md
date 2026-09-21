@@ -344,6 +344,12 @@ All three forces contain the same factor g, which cancels. Using masses in the s
 
 ## Future Unit 2 study-guide index
 
+### Additional recorded assignments
+
+- [Atwood Machine Pre-Lab — four questions and worked answers](unit-2-atwood-machine-prelab-solutions.md), recorded September 21, 2026. IDs: `U2-ATWOOD-PRELAB-01` through `U2-ATWOOD-PRELAB-04`. Topics: equal masses, changing mass difference and total mass, the string-length constraint, and free-body diagrams. These four questions are stored in the linked companion record, in addition to the 11 questions above.
+
+### Questions in this file
+
 | Concept | Question IDs |
 |---|---|
 | Zero net force and constant velocity | U2-H106-01, U2-H106-03 |
