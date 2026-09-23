@@ -4,6 +4,7 @@ AP Physics study guides and recorded worked solutions:
 
 ## Unit 2 - Forces
 
+- [Newton's Laws: 4.33-4.49 Odd (PDF)](output/pdf/unit-2-newtons-laws-4-33-to-4-49-odd.pdf) - all nine questions, worked answers, force diagrams, and a quick answer key; [recorded questions and solutions](unit-2-newtons-laws-4-33-to-4-49-odd-solutions.md).
 - [Atwood Machine Pre-Lab (PDF)](output/pdf/unit-2-atwood-machine-prelab.pdf) - all four questions, explanations, and labeled free-body diagrams; [recorded questions and solutions](unit-2-atwood-machine-prelab-solutions.md) for future study-guide use.
 - [Newton's Laws: p. 125, 4.21-4.30 All (PDF)](output/pdf/unit-2-newtons-laws-4-21-to-4-30.pdf) - all ten questions, worked answers, and labeled free-body diagrams; [editable solution record](unit-2-newtons-laws-4-21-to-4-30-solutions.md).
 - [Newton's Laws: p. 124, 4.7-4.19 Odd (PDF)](output/pdf/unit-2-newtons-laws-4-7-to-4-19-odd.pdf) - all seven assigned questions and worked solutions; [editable solution record](unit-2-newtons-laws-4-7-to-4-19-odd-solutions.md).

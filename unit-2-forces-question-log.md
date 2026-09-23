@@ -346,6 +346,7 @@ All three forces contain the same factor g, which cancels. Using masses in the s
 
 ### Additional recorded assignments
 
+- [Newton's Laws 4.33-4.49 odd - nine questions and worked answers](unit-2-newtons-laws-4-33-to-4-49-odd-solutions.md), recorded September 22, 2026. IDs: `U2-NL-4-33`, `U2-NL-4-35`, `U2-NL-4-37`, `U2-NL-4-39`, `U2-NL-4-41`, `U2-NL-4-43`, `U2-NL-4-45`, `U2-NL-4-47`, `U2-NL-4-49`. Topics: breaking tension and minimum time; force components and minimum force; connected crates and tension; derivatives and net force; apparent weight; average force and velocity reversal; vertical connected masses; rocket braking; integrating a time-dependent force. [PDF](output/pdf/unit-2-newtons-laws-4-33-to-4-49-odd.pdf). Original screenshots are archived in `sources/unit-2/newton-2026-09-22/`.
 - [Atwood Machine Pre-Lab — four questions and worked answers](unit-2-atwood-machine-prelab-solutions.md), recorded September 21, 2026. IDs: `U2-ATWOOD-PRELAB-01` through `U2-ATWOOD-PRELAB-04`. Topics: equal masses, changing mass difference and total mass, the string-length constraint, and free-body diagrams. These four questions are stored in the linked companion record, in addition to the 11 questions above.
 
 ### Questions in this file
